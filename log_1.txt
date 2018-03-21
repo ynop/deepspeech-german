@@ -1,0 +1,475 @@
+------------------------------------------------------------------------
+I STARTING Optimization
+I Training of Epoch 0 - loss: 309.855179
+I Validation of Epoch 0 - loss: 181.837840
+I Training of Epoch 1 - loss: 340.736655
+I Validation of Epoch 1 - loss: 236.291331
+I Training of Epoch 2 - loss: 328.548624
+I Validation of Epoch 2 - loss: 282.817871
+I Training of Epoch 3 - loss: 300.184750
+I Validation of Epoch 3 - loss: 234.415192
+I Training of Epoch 4 - loss: 277.911329
+I Validation of Epoch 4 - loss: 220.992452
+I Training of Epoch 5 - loss: 251.075642
+I Validation of Epoch 5 - loss: 198.223877
+I Training of Epoch 6 - loss: 227.441793
+I Validation of Epoch 6 - loss: 203.378433
+I Training of Epoch 7 - loss: 214.114107
+I Validation of Epoch 7 - loss: 166.614568
+I Training of Epoch 8 - loss: 196.508226
+I Validation of Epoch 8 - loss: 163.777229
+I Training of Epoch 9 - loss: 185.009631
+I Validation of Epoch 9 - loss: 157.603678
+I Training of Epoch 10 - loss: 174.768387
+I Validation of Epoch 10 - loss: 150.093829
+I Training of Epoch 11 - loss: 165.230346
+I Validation of Epoch 11 - loss: 146.272502
+I Training of Epoch 12 - loss: 156.695171
+I Validation of Epoch 12 - loss: 140.329824
+I Training of Epoch 13 - loss: 150.273011
+I Validation of Epoch 13 - loss: 132.393651
+I Training of Epoch 14 - loss: 142.600892
+I Validation of Epoch 14 - loss: 131.047880
+I Training of Epoch 15 - loss: 136.476807
+I Validation of Epoch 15 - loss: 129.099426
+I Training of Epoch 16 - loss: 132.448377
+I Validation of Epoch 16 - loss: 123.911232
+I Training of Epoch 17 - loss: 126.580714
+I Validation of Epoch 17 - loss: 132.756884
+I Training of Epoch 18 - loss: 120.826349
+I Validation of Epoch 18 - loss: 122.212041
+I Training of Epoch 19 - loss: 115.733115
+I Validation of Epoch 19 - loss: 121.676122
+I Training of Epoch 20 - loss: 111.169281
+I Validation of Epoch 20 - loss: 120.414632
+I Training of Epoch 21 - loss: 107.134800
+I Validation of Epoch 21 - loss: 117.498024
+I Training of Epoch 22 - loss: 102.655147
+I Validation of Epoch 22 - loss: 126.164688
+I Training of Epoch 23 - loss: 99.550907
+I Validation of Epoch 23 - loss: 113.135735
+I Training of Epoch 24 - loss: 95.952686
+I Validation of Epoch 24 - loss: 113.601906
+I Training of Epoch 25 - loss: 92.933112
+I Validation of Epoch 25 - loss: 113.458735
+I Training of Epoch 26 - loss: 91.130185
+I Validation of Epoch 26 - loss: 117.077810
+I Training of Epoch 27 - loss: 87.073348
+I Validation of Epoch 27 - loss: 125.000318
+I Training of Epoch 28 - loss: 84.446815
+I Validation of Epoch 28 - loss: 112.491216
+I Training of Epoch 29 - loss: 81.309251
+I Validation of Epoch 29 - loss: 115.261330
+I Training of Epoch 30 - loss: 78.781663
+I Validation of Epoch 30 - loss: 113.360886
+I Training of Epoch 31 - loss: 76.673116
+I Validation of Epoch 31 - loss: 118.026449
+I Training of Epoch 32 - loss: 74.517083
+I Validation of Epoch 32 - loss: 117.717534
+I FINISHED Optimization - training time: 2:11:50
+I Test of Epoch 33 - WER: 0.847435, loss: 85.6933097839, mean edit distance: 0.378122
+I --------------------------------------------------------------------------------
+I WER: 0.142857, loss: 17.281734, mean edit distance: 0.050000
+I  - src: "die antworten auf diese fragen lauten ja"
+I  - res: "die antworten auf diese fragen lauten "
+I --------------------------------------------------------------------------------
+I WER: 0.142857, loss: 19.728559, mean edit distance: 0.116279
+I  - src: "einführung in das politische system der brd"
+I  - res: "einführung in das politische system der werte "
+I --------------------------------------------------------------------------------
+I WER: 0.142857, loss: 24.427277, mean edit distance: 0.069767
+I  - src: "einführung in das politische system der brd"
+I  - res: "einführung in das politische system der erde "
+I --------------------------------------------------------------------------------
+I WER: 0.166667, loss: 26.366352, mean edit distance: 0.093023
+I  - src: "einzige möglichkeit allen gerecht zu werden"
+I  - res: "einzige möglichkeit einen gerecht zu werden "
+I --------------------------------------------------------------------------------
+I WER: 0.200000, loss: 23.451155, mean edit distance: 0.052632
+I  - src: "so muss unsere zusammenarbeit ablaufen"
+I  - res: "so muss unsere zusammenarbeit atlafen"
+I --------------------------------------------------------------------------------
+I WER: 0.222222, loss: 33.225277, mean edit distance: 0.118644
+I  - src: "dieser haushalt ist der einzig mögliche angesichts der lage"
+I  - res: "dieser ausser ist der einzige mögliche angesichts der lage "
+I --------------------------------------------------------------------------------
+I WER: 0.250000, loss: 34.389042, mean edit distance: 0.102041
+I  - src: "wir haben seinerzeit von kopf und herz gesprochen"
+I  - res: "wir haben seinerzeit von kopf und jerzgeporhen"
+I --------------------------------------------------------------------------------
+I WER: 0.285714, loss: 26.300955, mean edit distance: 0.078947
+I  - src: "ich glaube das ist inzwischen der fall"
+I  - res: "ich glaube das ist ein zwischen der fall "
+I --------------------------------------------------------------------------------
+I WER: 0.285714, loss: 27.001081, mean edit distance: 0.210526
+I  - src: "schiff ist auch besser für die strasse"
+I  - res: "will es auch besser für die strasse "
+I --------------------------------------------------------------------------------
+I WER: 0.285714, loss: 30.536863, mean edit distance: 0.125000
+I  - src: "die antworten auf diese fragen lauten ja"
+I  - res: "die antworten auf diese fragen noufenjaa"
+I --------------------------------------------------------------------------------
+I WER: 0.333333, loss: 18.853458, mean edit distance: 0.137931
+I  - src: "nach dem trinken klar im kopf"
+I  - res: "nach dem trinken klaren kopf "
+I --------------------------------------------------------------------------------
+I WER: 0.333333, loss: 20.985720, mean edit distance: 0.162791
+I  - src: "einzige möglichkeit allen gerecht zu werden"
+I  - res: "eine möglichkeit einen gerecht zu werden "
+I --------------------------------------------------------------------------------
+I WER: 0.333333, loss: 22.767290, mean edit distance: 0.206897
+I  - src: "nach dem trinken klar im kopf"
+I  - res: "nach dem trinken lagen kopf "
+I --------------------------------------------------------------------------------
+I WER: 0.333333, loss: 24.928690, mean edit distance: 0.194444
+I  - src: "das haben wir nicht erreichen wollen"
+I  - res: "das handel nicht erreichen wollen "
+I --------------------------------------------------------------------------------
+I WER: 0.333333, loss: 28.298954, mean edit distance: 0.222222
+I  - src: "das haben wir nicht erreichen wollen"
+I  - res: "das hat nicht erreichen wollen "
+I --------------------------------------------------------------------------------
+I WER: 0.333333, loss: 32.618710, mean edit distance: 0.225806
+I  - src: "wie ich mir das glück vorstelle"
+I  - res: "wie ich mir das gröforstille"
+I --------------------------------------------------------------------------------
+I WER: 0.375000, loss: 33.838306, mean edit distance: 0.146341
+I  - src: "dies ist eine liste der städte in serbien"
+I  - res: "dies ist eine liste der stetteinserlin"
+I --------------------------------------------------------------------------------
+I WER: 0.400000, loss: 17.786598, mean edit distance: 0.238095
+I  - src: "die wut und der stolz"
+I  - res: "die bet und der stouts"
+I --------------------------------------------------------------------------------
+I WER: 0.400000, loss: 19.202263, mean edit distance: 0.240000
+I  - src: "sind noch nicht so stabil"
+I  - res: "sind noch nicht disterbild"
+I --------------------------------------------------------------------------------
+I WER: 0.400000, loss: 19.353447, mean edit distance: 0.172414
+I  - src: "das ist ein historischer sieg"
+I  - res: "das ist ein historisches "
+I --------------------------------------------------------------------------------
+I WER: 0.400000, loss: 20.043581, mean edit distance: 0.105263
+I  - src: "so muss unsere zusammenarbeit ablaufen"
+I  - res: "so muss unsere zusammenarbeit auf laufen "
+I --------------------------------------------------------------------------------
+I WER: 0.400000, loss: 22.717663, mean edit distance: 0.173913
+I  - src: "was mir das herz bricht"
+I  - res: "was mir das helspricht"
+I --------------------------------------------------------------------------------
+I WER: 0.400000, loss: 23.350142, mean edit distance: 0.125000
+I  - src: "hier sollen die windräder stehen"
+I  - res: "hier sollen die inträlerstehen"
+I --------------------------------------------------------------------------------
+I WER: 0.400000, loss: 23.489925, mean edit distance: 0.130435
+I  - src: "was mir das herz bricht"
+I  - res: "was mir das erlsbricht"
+I --------------------------------------------------------------------------------
+I WER: 0.428571, loss: 26.941345, mean edit distance: 0.220000
+I  - src: "die frauen haben die besseren projekte geschrieben"
+I  - res: "die frauen haben die bessenpräktibeschrien"
+I --------------------------------------------------------------------------------
+I WER: 0.428571, loss: 29.440248, mean edit distance: 0.166667
+I  - src: "ich meine die strasse sollte gebaut werden"
+I  - res: "ich meine die strasse soutegbautwären"
+I --------------------------------------------------------------------------------
+I WER: 0.428571, loss: 31.408287, mean edit distance: 0.160000
+I  - src: "die frauen haben die besseren projekte geschrieben"
+I  - res: "die frauen haben die bessenpräektigeschrieden"
+I --------------------------------------------------------------------------------
+I WER: 0.428571, loss: 32.535103, mean edit distance: 0.157895
+I  - src: "wir wollten zeigen dass gewalt weh tut"
+I  - res: "wir wollten zeigen dass gewaltwildunt"
+I --------------------------------------------------------------------------------
+I WER: 0.428571, loss: 33.009766, mean edit distance: 0.157895
+I  - src: "wir wollten zeigen dass gewalt weh tut"
+I  - res: "wir wollten zeigen dass gewaltwildunt"
+I --------------------------------------------------------------------------------
+I WER: 0.500000, loss: 25.971701, mean edit distance: 0.136364
+I  - src: "der ländliche raum braucht seine lebensadern"
+I  - res: "der ländliche raum brouchtseielebensarlern"
+I --------------------------------------------------------------------------------
+I WER: 0.500000, loss: 28.667807, mean edit distance: 0.147059
+I  - src: "das ist alles mythos alles legende"
+I  - res: "das ist alles mit us alles lebende "
+I --------------------------------------------------------------------------------
+I WER: 0.500000, loss: 29.370152, mean edit distance: 0.217391
+I  - src: "jetzt hoffen wir dass die deiche weiter halten"
+I  - res: "jestoenwirdas die deiche weiter halten "
+I --------------------------------------------------------------------------------
+I WER: 0.500000, loss: 29.971088, mean edit distance: 0.176471
+I  - src: "das ist alles mythos alles legende"
+I  - res: "das ist als mit us alles legende "
+I --------------------------------------------------------------------------------
+I WER: 0.500000, loss: 30.182989, mean edit distance: 0.233333
+I  - src: "wer in die fremde will wandern"
+I  - res: "wer in die frendigelwandern"
+I --------------------------------------------------------------------------------
+I WER: 0.571429, loss: 22.136578, mean edit distance: 0.142857
+I  - src: "als politische organisation blieb der bund bedeutungslos"
+I  - res: "als politische organisation biedebundbedeutungsclus"
+I --------------------------------------------------------------------------------
+I WER: 0.571429, loss: 24.808374, mean edit distance: 0.178571
+I  - src: "als politische organisation blieb der bund bedeutungslos"
+I  - res: "als politische organisation begtebundbedeutungshlus"
+I --------------------------------------------------------------------------------
+I WER: 0.571429, loss: 29.951235, mean edit distance: 0.236842
+I  - src: "lassen wir die türken doch arm bleiben"
+I  - res: "lassen wir die trüpendorhaumenbleiben"
+I --------------------------------------------------------------------------------
+I WER: 0.571429, loss: 30.799339, mean edit distance: 0.209302
+I  - src: "das wirkt über die einzelnen stunden hinaus"
+I  - res: "das wirkt über die eins in den stondenunhonaus"
+I --------------------------------------------------------------------------------
+I WER: 0.571429, loss: 31.056295, mean edit distance: 0.258065
+I  - src: "dem stimme ich voll und ganz zu"
+I  - res: "dem stimme ich forlanganszu"
+I --------------------------------------------------------------------------------
+I WER: 0.571429, loss: 31.779758, mean edit distance: 0.263158
+I  - src: "lassen wir die türken doch arm bleiben"
+I  - res: "lassen wir die trütendocrhaubenleiben"
+I --------------------------------------------------------------------------------
+I WER: 0.571429, loss: 33.644814, mean edit distance: 0.261905
+I  - src: "ich meine die strasse sollte gebaut werden"
+I  - res: "ich meine die stresesuntegbautwären"
+I --------------------------------------------------------------------------------
+I WER: 0.571429, loss: 33.838089, mean edit distance: 0.170213
+I  - src: "die agenda zweitausendzehn ist aus meiner sicht"
+I  - res: "die ende zwei tausend wehen ist aus meiner sicht "
+I --------------------------------------------------------------------------------
+I WER: 0.600000, loss: 12.554216, mean edit distance: 0.107143
+I  - src: "er hat kein kind ausgelassen"
+I  - res: "er hat keinpindausgelassen"
+I --------------------------------------------------------------------------------
+I WER: 0.600000, loss: 16.550592, mean edit distance: 0.222222
+I  - src: "auch die schulträger können aufatmen"
+I  - res: "auch die schuträegerkönenaufadlme"
+I --------------------------------------------------------------------------------
+I WER: 0.600000, loss: 17.823833, mean edit distance: 0.194444
+I  - src: "auch die schulträger können aufatmen"
+I  - res: "auch die schusrägerkönnenaufadle"
+I --------------------------------------------------------------------------------
+I WER: 0.600000, loss: 22.276320, mean edit distance: 0.187500
+I  - src: "hier sollen die windräder stehen"
+I  - res: "die sollen die binträlerstehen"
+I --------------------------------------------------------------------------------
+I WER: 0.600000, loss: 24.467751, mean edit distance: 0.200000
+I  - src: "wir werden wie geplant weitermachen"
+I  - res: "wir werden die mebrandweutermachen"
+I --------------------------------------------------------------------------------
+I WER: 0.600000, loss: 27.835886, mean edit distance: 0.275862
+I  - src: "das ist ein historischer sieg"
+I  - res: "das ist eihistorhescharsibe"
+I --------------------------------------------------------------------------------
+I WER: 0.600000, loss: 28.247187, mean edit distance: 0.194444
+I  - src: "ein anderer kapitalismus ist möglich"
+I  - res: "ein anderer kapiterlisnususmöglich"
+I --------------------------------------------------------------------------------
+I WER: 0.600000, loss: 30.990984, mean edit distance: 0.281250
+I  - src: "antrag auf annahme als doktorand"
+I  - res: "antrag auf ainamalstauturand"
+I --------------------------------------------------------------------------------
+I WER: 0.600000, loss: 31.552523, mean edit distance: 0.250000
+I  - src: "antrag auf annahme als doktorand"
+I  - res: "antrag auf anamalsdakturant"
+I --------------------------------------------------------------------------------
+I WER: 0.625000, loss: 33.261738, mean edit distance: 0.219512
+I  - src: "dies ist eine liste der städte in serbien"
+I  - res: "dieses eine liste der stelteinserlin"
+I --------------------------------------------------------------------------------
+I WER: 0.666667, loss: 20.158691, mean edit distance: 0.218750
+I  - src: "dinge die ein neusser nicht sagt"
+I  - res: "in die ein näussernichtsat"
+I --------------------------------------------------------------------------------
+I WER: 0.666667, loss: 26.448383, mean edit distance: 0.312500
+I  - src: "dinge die ein neusser nicht sagt"
+I  - res: "mit die ein näusernichtsaart"
+I --------------------------------------------------------------------------------
+I WER: 0.714286, loss: 27.705488, mean edit distance: 0.230769
+I  - src: "das ist ja das thema unserer aussprache"
+I  - res: "das ist ernlestemaunsereraussprache"
+I --------------------------------------------------------------------------------
+I WER: 0.714286, loss: 27.717897, mean edit distance: 0.230769
+I  - src: "das ist ja das thema unserer aussprache"
+I  - res: "das ist endesthemarensreraussprache"
+I --------------------------------------------------------------------------------
+I WER: 0.714286, loss: 32.871899, mean edit distance: 0.285714
+I  - src: "die dividenden steigen und die proletarier fallen"
+I  - res: "die die widentensteigenunddepkolitalierfalgen"
+I --------------------------------------------------------------------------------
+I WER: 0.714286, loss: 33.312862, mean edit distance: 0.245283
+I  - src: "neben der aufbereitung wurde die röstanlage erweitert"
+I  - res: "neben der auf aretungwodediebesterlagererweitert"
+I --------------------------------------------------------------------------------
+I WER: 0.727273, loss: 26.992657, mean edit distance: 0.206349
+I  - src: "sie lassen offen welche rolle der staat in zukunft spielen soll"
+I  - res: "sie lassen offendeicherolle der staaten zu kündtspiellensolt"
+I --------------------------------------------------------------------------------
+I WER: 0.750000, loss: 24.058884, mean edit distance: 0.241379
+I  - src: "zwei wirtschaften liegen wüst"
+I  - res: "zwei witschaftenligunglst"
+I --------------------------------------------------------------------------------
+I WER: 0.750000, loss: 25.343956, mean edit distance: 0.275862
+I  - src: "zwei wirtschaften liegen wüst"
+I  - res: "zwei wirtschaftenigngelnst"
+I --------------------------------------------------------------------------------
+I WER: 0.750000, loss: 31.493248, mean edit distance: 0.357143
+I  - src: "mit anhang und bibliographie"
+I  - res: "mit ananunibiogkratie"
+I --------------------------------------------------------------------------------
+I WER: 0.750000, loss: 31.530254, mean edit distance: 0.392857
+I  - src: "mit anhang und bibliographie"
+I  - res: "mit anandunebiogratiet"
+I --------------------------------------------------------------------------------
+I WER: 0.800000, loss: 13.234057, mean edit distance: 0.214286
+I  - src: "er hat kein kind ausgelassen"
+I  - res: "der hat kendindausgelassten"
+I --------------------------------------------------------------------------------
+I WER: 0.800000, loss: 15.408043, mean edit distance: 0.310345
+I  - src: "wir brauchen masse und klasse"
+I  - res: "wir baucemassemnklasser"
+I --------------------------------------------------------------------------------
+I WER: 0.800000, loss: 16.751566, mean edit distance: 0.285714
+I  - src: "die wut und der stolz"
+I  - res: "die butunddersteuz"
+I --------------------------------------------------------------------------------
+I WER: 0.800000, loss: 25.500292, mean edit distance: 0.347826
+I  - src: "wir liegen kopf an kopf"
+I  - res: "wir legen koptralhapt"
+I --------------------------------------------------------------------------------
+I WER: 0.800000, loss: 27.584457, mean edit distance: 0.310345
+I  - src: "das darf so nicht weitergehen"
+I  - res: "das tachnomichtweitergeen"
+I --------------------------------------------------------------------------------
+I WER: 0.800000, loss: 27.618444, mean edit distance: 0.171429
+I  - src: "wir werden wie geplant weitermachen"
+I  - res: "wir ehren die geplanweitermachen"
+I --------------------------------------------------------------------------------
+I WER: 0.800000, loss: 30.837189, mean edit distance: 0.275862
+I  - src: "das darf so nicht weitergehen"
+I  - res: "das achonichtweitergeen"
+I --------------------------------------------------------------------------------
+I WER: 0.800000, loss: 33.342388, mean edit distance: 0.261905
+I  - src: "die zukunft des europäischen sozialmodells"
+I  - res: "die zugkünfdeseuropäischensozialnmdeist"
+I --------------------------------------------------------------------------------
+I WER: 0.800000, loss: 34.309582, mean edit distance: 0.450000
+I  - src: "ich bin dann mal weg"
+I  - res: "ich gilndenmelwec"
+I --------------------------------------------------------------------------------
+I WER: 0.833333, loss: 29.101110, mean edit distance: 0.351351
+I  - src: "um den palästinensern rechte zu geben"
+I  - res: "von den paletsthionensanrechtezuteben"
+I --------------------------------------------------------------------------------
+I WER: 0.833333, loss: 30.235498, mean edit distance: 0.406250
+I  - src: "der brief bezog sich auf kadmium"
+I  - res: "der bribezocssichaufkratiren"
+I --------------------------------------------------------------------------------
+I WER: 0.833333, loss: 30.275387, mean edit distance: 0.238095
+I  - src: "es gibt anzeichen einer neuen spiessigkeit"
+I  - res: "es wird anzeichteneierneunspiesigkeit"
+I --------------------------------------------------------------------------------
+I WER: 0.833333, loss: 31.013372, mean edit distance: 0.351351
+I  - src: "um den palästinensern rechte zu geben"
+I  - res: "von den palattinentanreichtezueben"
+I --------------------------------------------------------------------------------
+I WER: 0.833333, loss: 31.197828, mean edit distance: 0.275000
+I  - src: "du meine güte diese kleingeistigkeit der"
+I  - res: "meine bitte die setleingeistickeitder"
+I --------------------------------------------------------------------------------
+I WER: 0.833333, loss: 31.668758, mean edit distance: 0.375000
+I  - src: "der brief bezog sich auf kadmium"
+I  - res: "der bribeochsichaufkanin"
+I --------------------------------------------------------------------------------
+I WER: 0.833333, loss: 34.582363, mean edit distance: 0.285714
+I  - src: "es gibt anzeichen einer neuen spiessigkeit"
+I  - res: "es wird anzeicgteneerneunspiesigkeit"
+I --------------------------------------------------------------------------------
+I WER: 0.857143, loss: 33.821030, mean edit distance: 0.342105
+I  - src: "in klammern steht das jahr der messung"
+I  - res: "in klamenstetdasjademisseng"
+I --------------------------------------------------------------------------------
+I WER: 0.888889, loss: 28.799425, mean edit distance: 0.224490
+I  - src: "aber jedem ihrer worte war anzumerken dass sie an"
+I  - res: "aber edendihrerwortewarenzumerkendasssjean"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 13.762662, mean edit distance: 0.250000
+I  - src: "darum kaufen sie auch keines"
+I  - res: "daruktraufensieachkeines"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 16.061596, mean edit distance: 0.321429
+I  - src: "darum kaufen sie auch keines"
+I  - res: "darunkhafensieauchkaies"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 21.954420, mean edit distance: 0.281250
+I  - src: "eindeutig ein gericht der sieger"
+I  - res: "eindoltigeingerichtersiega"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 22.699068, mean edit distance: 0.258065
+I  - src: "dann würde keiner mehr arbeiten"
+I  - res: "danwüllkeinermehrarbeiten"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 23.871815, mean edit distance: 0.322581
+I  - src: "dann würde keiner mehr arbeiten"
+I  - res: "danwlrkeinermerarbäiten"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 25.280214, mean edit distance: 0.312500
+I  - src: "eindeutig ein gericht der sieger"
+I  - res: "eindoltigeingerichtersieda"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 26.457567, mean edit distance: 0.423077
+I  - src: "ohne strom sind wir nichts"
+I  - res: "rodshronsinddirnichts"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 27.521322, mean edit distance: 0.500000
+I  - src: "ohne strom sind wir nichts"
+I  - res: "oeshronmzundinichtz"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 27.922081, mean edit distance: 0.305556
+I  - src: "ein anderer kapitalismus ist möglich"
+I  - res: "eine andere karpiderlisnusesmöglich"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 28.157526, mean edit distance: 0.333333
+I  - src: "zeus und andere tolle typen"
+I  - res: "es ontanderetolleteten"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 28.367365, mean edit distance: 0.227273
+I  - src: "der ländliche raum braucht seine lebensadern"
+I  - res: "er ändlicheraumbrauchseilelebensarlern"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 29.402933, mean edit distance: 0.342105
+I  - src: "schiff ist auch besser für die strasse"
+I  - res: "i des auchbeserfürdiestrasse"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 29.694090, mean edit distance: 0.360000
+I  - src: "es gibt für alles ein app"
+I  - res: "esgitfüralleseine"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 29.705450, mean edit distance: 0.434783
+I  - src: "wir liegen kopf an kopf"
+I  - res: "wirligenkorralnhapf"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 30.287279, mean edit distance: 0.370370
+I  - src: "zeus und andere tolle typen"
+I  - res: "zeisonlanderetoletüten"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 30.901451, mean edit distance: 0.342105
+I  - src: "ich glaube das ist inzwischen der fall"
+I  - res: "icgauberindassisdinwischenderfal"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 33.804790, mean edit distance: 0.400000
+I  - src: "hinzu kam der bau von sechs wanderjollen"
+I  - res: "in zukamdebauchunsechsvoderjulen"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 33.972343, mean edit distance: 0.241379
+I  - src: "familienpolitik ist bildungspolitik ist wirtschaftspolitik"
+I  - res: "amiinkolitikdespbedungspolitikdistbertschaftspolitik"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 34.396229, mean edit distance: 0.480000
+I  - src: "es gibt für alles ein app"
+I  - res: "iesrimtferalleseine"
+I --------------------------------------------------------------------------------
+I Exporting the model...
+Converted 14 variables to const ops.
+I Models exported at /cluster/data/project_kws/exp/deepspeech_german/model_export/
+./run_training.sh: error reading input file: Stale file handle

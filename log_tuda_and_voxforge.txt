@@ -1,0 +1,42 @@
+I Test of Epoch 29 - WER: 0.809315, loss: 122.42175595, mean edit distance: 0.326160
+I --------------------------------------------------------------------------------
+I WER: 0.250000, loss: 1.636255, mean edit distance: 0.043478
+I  - src: "ich möchte bitte kochen"
+I  - res: "ich möchte bitte kocen"
+I --------------------------------------------------------------------------------
+I WER: 0.250000, loss: 1.869046, mean edit distance: 0.043478
+I  - src: "ich werde sie ausmachen"
+I  - res: "ich werde sie ausmache"
+I --------------------------------------------------------------------------------
+I WER: 0.250000, loss: 2.086848, mean edit distance: 0.043478
+I  - src: "ich werde sie ausmachen"
+I  - res: "ich werde sie ausmochen"
+I --------------------------------------------------------------------------------
+I WER: 0.250000, loss: 2.458537, mean edit distance: 0.043478
+I  - src: "ich möchte etwas kochen"
+I  - res: "ich möchte etwas krochen"
+I --------------------------------------------------------------------------------
+I WER: 0.250000, loss: 2.557195, mean edit distance: 0.043478
+I  - src: "ich möchte etwas kochen"
+I  - res: "ich möchte etwas krochen"
+I --------------------------------------------------------------------------------
+I WER: 0.333333, loss: 0.520140, mean edit distance: 0.058824
+I  - src: "ich möchte kochen"
+I  - res: "ich möchte krochen"
+I --------------------------------------------------------------------------------
+I WER: 0.333333, loss: 2.551879, mean edit distance: 0.230769
+I  - src: "miss die zeit"
+I  - res: "ist die zeit "
+I --------------------------------------------------------------------------------
+I WER: 0.500000, loss: 1.450505, mean edit distance: 0.076923
+I  - src: "ich möchte häppchen machen"
+I  - res: "ich möchte häpchenmachen"
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 0.757631, mean edit distance: 1.000000
+I  - src: "gut"
+I  - res: ""
+I --------------------------------------------------------------------------------
+I WER: 1.000000, loss: 2.250979, mean edit distance: 1.000000
+I  - src: "gern"
+I  - res: "die "
+I --------------------------------------------------------------------------------
