@@ -38,7 +38,7 @@ if __name__ == '__main__':
     merged_corpus = pingu.Corpus.merge_corpora([tuda_corpus, voxforge_corpus])
 
     splitter = subset.Splitter(merged_corpus, random_seed=38)
-    splits = splitter.split_by_length_of_utterances({'train': 0.7, 'dev': 0.15, 'test': 0.15})
+    splits = splitter.split_by_length_of_utterances({'train': 0.7, 'dev': 0.15, 'test': 0.15}, separate_issuers=True)
 
     merged_corpus.import_subview('train', splits['train'])
     merged_corpus.import_subview('dev', splits['dev'])
