@@ -1,3 +1,3 @@
 nltk
 num2words
-git+https://github.com/ynop/pingu.git@d2143d292f577933860a040a1cf779c09581bcd0#egg=pingu
+git+https://github.com/ynop/pingu.git@ee5278cd2eb276c484b008fb75b70cf0155a3570#egg=pingu
