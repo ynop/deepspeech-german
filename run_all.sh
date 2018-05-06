@@ -21,7 +21,7 @@ $kenlm_bin/build_binary -T -s $exp_path/words.arpa  $exp_path/lm.binary
 $deepspeech/native_client/generate_trie data/alphabet.txt $exp_path/lm.binary $exp_path/cleaned_vocab.txt $exp_path/trie
 
 # Download/Prepare Data
-./prepare_data.py $tuda_corpus_path $exp_path/data
+./prepare_data_tuda_and_voxforge.py $tuda_corpus_path $voxforge_corpus_path $exp_path/data
 
 # Train
 ./run_training.sh $deepspeech $(realpath data/alphabet.txt) $exp_path
