@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ```
 
 ### Download the data
-1. Download the text corpus from http://dialogplus.lt.informatik.tu-darmstadt.de/downloads/speechdata/German_sentences_8mil_filtered_maryfied.txt.gz and store it to `text_corpus_path`.
+1. Download the text corpus from http://ltdata1.informatik.uni-hamburg.de/kaldi_tuda_de/German_sentences_8mil_filtered_maryfied.txt.gz and store it to `text_corpus_path`.
 2. Download the German Distant Speech Corpus (TUDA) from http://www.repository.voxforge1.org/downloads/de/german-speechdata-package-v2.tar.gz and store it to `tuda_corpus_path`.
 3. Download the Voxforge German Speech data (via pingu python library):
 ```python
