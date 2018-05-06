@@ -1,14 +1,72 @@
 # DeepSpeech German
 This repository contains scripts used to test deepspeech (https://github.com/mozilla/DeepSpeech) with a "small" set of german speech (~60h).
 
-## Language  model
+## Used data
+
+### Language  model
 For the language model a text corpus is used, also provided by the people of the " German speech data corpus"
 (https://www.inf.uni-hamburg.de/en/inst/ab/lt/resources/data/acoustic-models.html).
 
-## Speech data
+### Speech data
 
 * https://www.inf.uni-hamburg.de/en/inst/ab/lt/resources/data/acoustic-models.html
 * http://www.repository.voxforge1.org/downloads/de/Trunk/Audio/Main/16kHz_16bit/
+
+## Training
+
+First the following path have to be defined:
+
+* **tuda_corpus_path**: Path where the German Distant Speech Corpus is stored.
+* **voxforge_corpus_path**: Path where the Voxforge German Speech data is stored.
+* **text_corpus_path**: Path where the text corpus is stored.
+* **exp_path**: A directory where all output files are written to.
+* **kenlm_bin**: Path to the kenLM tool
+* **deepspeech**: Path to the cloned DeepSpeech repository
+
+The commands are expected to be executed from the path where this repository is cloned. Take a look at `run_all.sh` as an example for executing all the commands.
+
+### Install Python Requirements
+```
+pip install -r requirements.txt
+```
+
+### Download the data
+1. Download the text corpus from http://dialogplus.lt.informatik.tu-darmstadt.de/downloads/speechdata/German_sentences_8mil_filtered_maryfied.txt.gz and store it to `text_corpus_path`.
+2. Download the German Distant Speech Corpus (TUDA) from http://www.repository.voxforge1.org/downloads/de/german-speechdata-package-v2.tar.gz and store it to `tuda_corpus_path`.
+3. Download the Voxforge German Speech data (via pingu python library):
+```python
+from pingu.corpus import io
+
+dl = io.VoxforgeDownloader(lang='de')
+dl.download(voxforge_corpus_path)
+```
+
+### Build LM 
+```
+# First the text is normalized and cleaned.
+./prepare_text.py $text_corpus_path $exp_path/clean_vocab.txt
+
+# KenLM is used to build the LM
+$kenlm_bin/lmplz --text $exp_path/clean_vocab.txt --arpa $exp_path/words.arpa --o 3
+$kenlm_bin/build_binary -T -s $exp_path/words.arpa $exp_path/lm.binary
+```
+
+### Build trie
+```
+# The deepspeech tools are used to create the trie
+$deepspeech/native_client/generate_trie data/alphabet.txt $exp_path/lm.binary $exp_path/clean_vocab.txt $exp_path/trie
+```
+
+### Prepare audio data
+```
+# prepare_data.py creates the csv files defining the audio data used for training
+./prepare_data.py $tuda_corpus_path $voxforge_corpus_path $exp_path/data
+```
+
+### Run training
+```
+./run_training.sh $deepspeech $(realpath data/alphabet.txt) $exp_path
+```
 
 ## Results
 
