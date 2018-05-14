@@ -1,5 +1,5 @@
 # DeepSpeech German
-This repository contains scripts used to test deepspeech (https://github.com/mozilla/DeepSpeech) with a "small" set of german speech (~60h).
+This repository contains scripts used to test deepspeech (https://github.com/mozilla/DeepSpeech) with a "small" set of german speech (~60h). This is just for prototyping. The results, on speech that is noisy or very dissimilar to the training data, are really bad.
 
 ## Used data
 
