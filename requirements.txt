@@ -1,3 +1,2 @@
-nltk
 num2words
-git+https://github.com/ynop/pingu.git@ee5278cd2eb276c484b008fb75b70cf0155a3570#egg=pingu
+audiomate

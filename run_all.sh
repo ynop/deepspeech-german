@@ -4,6 +4,7 @@ set -xe
 
 tuda_corpus_path="/cluster/data/project_kws/data/tuda"
 voxforge_corpus_path="/cluster/data/project_kws/data/voxforge_de"
+swc_corpus_path="/cluster/data/project_kws/data/SWC_2017_10"
 text_corpus_path="/cluster/data/project_kws/data/text_corpora/German_sentences_8mil_filtered_maryfied.txt"
 
 exp_path="/cluster/data/project_kws/exp/deepspeech_german"

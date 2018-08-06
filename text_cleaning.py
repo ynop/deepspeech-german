@@ -148,6 +148,12 @@ def clean_word(word):
     word = replace_symbols(word)
     word = remove_symbols(word)
 
+    bad_chars = get_bad_character(word)
+
+    if len(bad_chars) > 0:
+        print('Bad characters in "{}"'.format(word))
+        print('--> {}'.format(', '.join(bad_chars)))
+
     return word
 
 
