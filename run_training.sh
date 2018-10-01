@@ -12,13 +12,15 @@ if [ ! -f DeepSpeech.py ]; then
     exit 1
 fi;
 
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:$(pwd)/native_client
+
 python -u DeepSpeech.py \
   --train_files $exp_path/data/train.csv \
   --dev_files $exp_path/data/dev.csv \
   --test_files $exp_path/data/test.csv \
-  --train_batch_size 80 \
-  --dev_batch_size 80 \
-  --test_batch_size 40 \
+  --train_batch_size 12 \
+  --dev_batch_size 12 \
+  --test_batch_size 12 \
   --n_hidden 375 \
   --epoch 50 \
   --display_step 0 \

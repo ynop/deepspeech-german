@@ -1,5 +1,7 @@
 # DeepSpeech German
-This repository contains scripts used to test deepspeech (https://github.com/mozilla/DeepSpeech) with a "small" set of german speech (~60h). This is just for prototyping. The results, on speech that is noisy or very dissimilar to the training data, are really bad.
+This repository contains scripts used to test deepspeech (https://github.com/mozilla/DeepSpeech) (v0.2.0-alpha.8). 
+This is just for prototyping. 
+The results, on speech that is noisy or very dissimilar to the training data, are really bad.
 
 ## Used data
 
@@ -9,8 +11,9 @@ For the language model a text corpus is used, also provided by the people of the
 
 ### Speech data
 
-* https://www.inf.uni-hamburg.de/en/inst/ab/lt/resources/data/acoustic-models.html
-* http://www.repository.voxforge1.org/downloads/de/Trunk/Audio/Main/16kHz_16bit/
+* https://www.inf.uni-hamburg.de/en/inst/ab/lt/resources/data/acoustic-models.html (~30h)
+* http://www.repository.voxforge1.org/downloads/de/Trunk/Audio/Main/16kHz_16bit/ (~50h)
+* https://nats.gitlab.io/swc/ (~150h)
 
 ## Training
 
@@ -18,6 +21,7 @@ First the following path have to be defined:
 
 * **tuda_corpus_path**: Path where the German Distant Speech Corpus is stored.
 * **voxforge_corpus_path**: Path where the Voxforge German Speech data is stored.
+* **swc_corpus_path**: Path where the Spoken Wikipedia Corpus is stored.
 * **text_corpus_path**: Path where the text corpus is stored.
 * **exp_path**: A directory where all output files are written to.
 * **kenlm_bin**: Path to the kenLM tool
@@ -30,15 +34,31 @@ The commands are expected to be executed from the path where this repository is 
 pip install -r requirements.txt
 ```
 
+For requirements regarding DeepSpeech checkout their repository.
+For the native-client with gpu use:
+
+```
+python3 util/taskcluster.py --target native_client --branch "v0.2.0-alpha.8" --arch gpu
+```
+
 ### Download the data
 1. Download the text corpus from http://ltdata1.informatik.uni-hamburg.de/kaldi_tuda_de/German_sentences_8mil_filtered_maryfied.txt.gz and store it to `text_corpus_path`.
 2. Download the German Distant Speech Corpus (TUDA) from http://www.repository.voxforge1.org/downloads/de/german-speechdata-package-v2.tar.gz and store it to `tuda_corpus_path`.
-3. Download the Voxforge German Speech data (via pingu python library):
+3. Download the Spoken Wikipedia Corpus (SWC) from https://nats.gitlab.io/swc/ and prepare 
+   it according to https://audiomate.readthedocs.io/en/latest/documentation/indirect_support.html.
+4. Download the Voxforge German Speech data (via pingu python library):
+
 ```python
-from pingu.corpus import io
+from audiomate.corpus import io
 
 dl = io.VoxforgeDownloader(lang='de')
 dl.download(voxforge_corpus_path)
+```
+
+### Prepare audio data
+```
+# prepare_data.py creates the csv files defining the audio data used for training
+./prepare_data.py $tuda_corpus_path $voxforge_corpus_path $exp_path/data
 ```
 
 ### Build LM 
@@ -71,45 +91,47 @@ $deepspeech/native_client/generate_trie data/alphabet.txt $exp_path/lm.binary $e
 ## Results
 
 ```
-I Test of Epoch 29 - WER: 0.809315, loss: 122.42175595, mean edit distance: 0.326160
+I Test of Epoch 19 - WER: 0.667205, loss: 69.56213065852289, mean edit distance: 0.287312
 I --------------------------------------------------------------------------------
-I WER: 0.250000, loss: 1.636255, mean edit distance: 0.043478
-I  - src: "ich möchte bitte kochen"
-I  - res: "ich möchte bitte kocen"
+I WER: 0.333333, loss: 0.544307, mean edit distance: 0.200000
+I  - src: "p c b"
+I  - res: "p c "
 I --------------------------------------------------------------------------------
-I WER: 0.250000, loss: 1.869046, mean edit distance: 0.043478
-I  - src: "ich werde sie ausmachen"
-I  - res: "ich werde sie ausmache"
+I WER: 0.500000, loss: 0.533773, mean edit distance: 0.142857
+I  - src: "oder bundesrat"
+I  - res: "der bundesrat "
 I --------------------------------------------------------------------------------
-I WER: 0.250000, loss: 2.086848, mean edit distance: 0.043478
-I  - src: "ich werde sie ausmachen"
-I  - res: "ich werde sie ausmochen"
+I WER: 1.000000, loss: 0.102555, mean edit distance: 0.125000
+I  - src: "handlung"
+I  - res: "handlunge"
 I --------------------------------------------------------------------------------
-I WER: 0.250000, loss: 2.458537, mean edit distance: 0.043478
-I  - src: "ich möchte etwas kochen"
-I  - res: "ich möchte etwas krochen"
+I WER: 1.000000, loss: 0.152456, mean edit distance: 0.500000
+I  - src: "erde"
+I  - res: "er "
 I --------------------------------------------------------------------------------
-I WER: 0.250000, loss: 2.557195, mean edit distance: 0.043478
-I  - src: "ich möchte etwas kochen"
-I  - res: "ich möchte etwas krochen"
+I WER: 1.000000, loss: 0.152456, mean edit distance: 0.500000
+I  - src: "erde"
+I  - res: "er "
 I --------------------------------------------------------------------------------
-I WER: 0.333333, loss: 0.520140, mean edit distance: 0.058824
-I  - src: "ich möchte kochen"
-I  - res: "ich möchte krochen"
+I WER: 1.000000, loss: 0.555418, mean edit distance: 0.500000
+I  - src: "form"
+I  - res: "vor "
 I --------------------------------------------------------------------------------
-I WER: 0.333333, loss: 2.551879, mean edit distance: 0.230769
-I  - src: "miss die zeit"
-I  - res: "ist die zeit "
+I WER: 1.000000, loss: 0.714687, mean edit distance: 0.250000
+I  - src: "werk"
+I  - res: "wer "
 I --------------------------------------------------------------------------------
-I WER: 0.500000, loss: 1.450505, mean edit distance: 0.076923
-I  - src: "ich möchte häppchen machen"
-I  - res: "ich möchte häpchenmachen"
+I WER: 1.000000, loss: 0.851070, mean edit distance: 0.200000
+I  - src: "texte"
+I  - res: "text "
 I --------------------------------------------------------------------------------
-I WER: 1.000000, loss: 0.757631, mean edit distance: 1.000000
-I  - src: "gut"
-I  - res: ""
+I WER: 1.000000, loss: 0.912912, mean edit distance: 0.600000
+I  - src: "misst"
+I  - res: "mit "
 I --------------------------------------------------------------------------------
-I WER: 1.000000, loss: 2.250979, mean edit distance: 1.000000
-I  - src: "gern"
-I  - res: "die "
+I WER: 2.000000, loss: 0.898193, mean edit distance: 0.250000
+I  - src: "beilagen"
+I  - res: "bei lagen "
+I --------------------------------------------------------------------------------
 ```
+
