@@ -64,7 +64,7 @@ dl.download(voxforge_corpus_path)
 ### Build LM
 ```
 # First the text is normalized and cleaned.
-./prepare_text.py $text_corpus_path $exp_path/clean_vocab.txt
+./prepare_vocab.py $text_corpus_path $exp_path/clean_vocab.txt
 
 # KenLM is used to build the LM
 $kenlm_bin/lmplz --text $exp_path/clean_vocab.txt --arpa $exp_path/words.arpa --o 3
