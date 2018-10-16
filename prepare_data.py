@@ -25,9 +25,9 @@ import text_cleaning
 
 def clean_transcriptions(corpus):
     for utterance in corpus.utterances.values():
-        transcription = utterance.label_lists[assets.LL_WORD_TRANSCRIPT][0].value
+        transcription = utterance.label_lists[audiomate.corpus.LL_WORD_TRANSCRIPT][0].value
         cleaned = text_cleaning.clean_sentence(transcription)
-        utterance.label_lists[assets.LL_WORD_TRANSCRIPT][0].value = cleaned
+        utterance.label_lists[audiomate.corpus.LL_WORD_TRANSCRIPT][0].value = cleaned
 
 
 if __name__ == '__main__':
