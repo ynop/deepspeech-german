@@ -17,7 +17,6 @@ import argparse
 
 import audiomate
 from audiomate.corpus import io
-from audiomate.corpus import assets
 from audiomate.corpus import subset
 
 import text_cleaning
