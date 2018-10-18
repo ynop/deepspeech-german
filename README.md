@@ -1,6 +1,6 @@
 # DeepSpeech German
-This repository contains scripts used to test deepspeech (https://github.com/mozilla/DeepSpeech) (v0.2.0-alpha.8). 
-This is just for prototyping. 
+This repository contains scripts used to test deepspeech (https://github.com/mozilla/DeepSpeech) (v0.2.0-alpha.8).
+This is just for prototyping.
 The results, on speech that is noisy or very dissimilar to the training data, are really bad.
 
 ## Used data
@@ -44,7 +44,7 @@ python3 util/taskcluster.py --target native_client --branch "v0.2.0-alpha.8" --a
 ### Download the data
 1. Download the text corpus from http://ltdata1.informatik.uni-hamburg.de/kaldi_tuda_de/German_sentences_8mil_filtered_maryfied.txt.gz and store it to `text_corpus_path`.
 2. Download the German Distant Speech Corpus (TUDA) from http://www.repository.voxforge1.org/downloads/de/german-speechdata-package-v2.tar.gz and store it to `tuda_corpus_path`.
-3. Download the Spoken Wikipedia Corpus (SWC) from https://nats.gitlab.io/swc/ and prepare 
+3. Download the Spoken Wikipedia Corpus (SWC) from https://nats.gitlab.io/swc/ and prepare
    it according to https://audiomate.readthedocs.io/en/latest/documentation/indirect_support.html.
 4. Download the Voxforge German Speech data (via pingu python library):
 
@@ -61,10 +61,10 @@ dl.download(voxforge_corpus_path)
 ./prepare_data.py $tuda_corpus_path $voxforge_corpus_path $exp_path/data
 ```
 
-### Build LM 
+### Build LM
 ```
 # First the text is normalized and cleaned.
-./prepare_text.py $text_corpus_path $exp_path/clean_vocab.txt
+./prepare_vocab.py $text_corpus_path $exp_path/clean_vocab.txt
 
 # KenLM is used to build the LM
 $kenlm_bin/lmplz --text $exp_path/clean_vocab.txt --arpa $exp_path/words.arpa --o 3
@@ -75,12 +75,6 @@ $kenlm_bin/build_binary -T -s $exp_path/words.arpa $exp_path/lm.binary
 ```
 # The deepspeech tools are used to create the trie
 $deepspeech/native_client/generate_trie data/alphabet.txt $exp_path/lm.binary $exp_path/clean_vocab.txt $exp_path/trie
-```
-
-### Prepare audio data
-```
-# prepare_data.py creates the csv files defining the audio data used for training
-./prepare_data.py $tuda_corpus_path $voxforge_corpus_path $exp_path/data
 ```
 
 ### Run training
